@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=PT+Serif:ital,wght@1,700&family=Playball&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600;800&family=PT+Serif:ital,wght@1,700&family=Playball&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+main {
+    background-image: url(/images//logo/IN-en-20231211-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    height: 95vh;
+    position: relative;
+    background-position: center, center;
+    background-repeat: no-repeat;
+    background-size: max(100vw, 1200px);
+}
+
+main .box {
+    height: 95vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.67;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    max-width: 80vw;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+}
+
+nav img {
+    color: #ff0000;
+    width: 170px;
+    position: relative;
+    z-index: 10;
+    top: 20px;
+}
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    font-family: 'Martel Sans', sans-serif;
+    padding: 0 30px;
+    gap: 23px;
+}
+
+.hero span {
+    color: white;
+    font-family: 'Martel Sans', sans-serif;
+}
+.hero>:first-child{
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+}
+.hero>:nth-child(2){
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+.hero>:nth-child(3){
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+.speration{
+    height: 6px;
+    background-color: #7f7b7bb4;
+}
+.btn{
+    padding: 10px 24px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(207 186 186 / 18%);
+    border: none;
+    color: white;
+    font-size: 19px;
+}
+.btn-red{
+    background-color: red;
+    padding: 10px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    color: white;
+    border: none;
+}
+.btn-red-sm{
+    background-color: red;
+    padding: 10px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    color: white;
+    border: none;
+}
+.hero-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.e_input{
+    padding: 8px 24px;
+    color: white;
+    font-size: 20px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.2);
+    border: 0.5px solid ;
+}
+/* section  */
+.first{
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white ;
+    align-items: center;
+}
+
+.section_image{
+    position: relative;
+}
+.section_image img{
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+.section_image video{
+    position: absolute;
+    top: 51px;
+    right: 0;
+}
+section.first>div{
+    display: flex;
+    flex-direction: column;
+    padding: 14px 0;
+}
+.first >div :nth-child(1){
+    font-size: 48px;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+}
+.first >div :nth-child(2){
+    font-size: 24px;
+    font-weight: bolder;
+}
+/* FAQ box  */
+.FAQ{
+    background-color: black;
+    color: white;
+    padding: 34px;
+}
+.FAQ h2{
+    text-align: center;
+    font-size: 48px;
+    color: red;
+    font-family: 'Martel Sans', sans-serif;
+}
+.FAQ_box{
+    display: flex;
+    padding: 30px;
+    margin: auto;
+    background-color: #8080805e;
+    max-width: 50vw;
+    justify-content: space-between;
+    margin-top: 12px;
+    cursor: pointer;
+    font-size: 24px;
+    transition: all 0.5s ease-out;
+    color: rgb(217 161 161);
+}
+.FAQ_box:hover{
+    background-color: rgba(123, 118, 118, 0.638);
+}
+footer{
+    max-width: 60vw;
+    color: white;
+    margin: auto;
+    height: 35vh;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+
+}
+@media screen and (max-width:1300px) {
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+    .site-button{
+        margin: 30px 0px 5px 33px;
+    }
+    body{
+        overflow-x:  hidden;
+    }
+    .Footer_item{
+        padding-top: 12px;
+    }
+    .hero>:nth-child(1){
+        font-size: 32px;
+    }
+    .hero>:nth-child(2){
+        font-size: 18px;
+    }
+    .hero>:nth-child(3){
+        font-size: 18px;
+    }
+    .hero-btn{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:1300px){
+    .first{
+        flex-wrap: wrap;
+    }
+    nav{
+        max-height: 90vw;
+    }
+    .section_image img{
+        width: 305px;
+        position: relative;
+        z-index: 10;
+        padding-left: 12px;
+    }
+    .section_image video{
+        width: 305px;
+        padding-left: 12px;
+    }
+    /* main{
+        height: 53vh;
+    }
+    .hero{
+        height: 53vh;
+    }
+    main .box{
+        height: 53vh;
+    } */
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+    margin-top: 12px;
+    font-size: 14px;
+}
+.Footer_item{
+    display: flex;
+    flex-direction: column;
+
+}
+.Question{
+    padding: 34px 0;
+}
